@@ -4,84 +4,84 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://40823116.github.io/cd2021/blog/</loc>
-<lastmod>2021-02-26T01:30:42-00:00</lastmod>
+<loc>./</loc>
+<lastmod>2021-03-03T23:38:39-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://40823116.github.io/cd2021/blog/archives.html</loc>
-<lastmod>2021-02-26T01:30:42-00:00</lastmod>
+<loc>./archives.html</loc>
+<lastmod>2021-03-03T23:38:39-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://40823116.github.io/cd2021/blog/tags.html</loc>
-<lastmod>2021-02-26T01:30:42-00:00</lastmod>
+<loc>./tags.html</loc>
+<lastmod>2021-03-03T23:38:39-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://40823116.github.io/cd2021/blog/categories.html</loc>
-<lastmod>2021-02-26T01:30:42-00:00</lastmod>
+<loc>./categories.html</loc>
+<lastmod>2021-03-03T23:38:39-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://40823116.github.io/cd2021/blog/pages/about/</loc>
+<loc>./pages/about/</loc>
 <lastmod>2021-02-25T16:24:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://40823116.github.io/cd2021/blog/cd2021 40823116.html</loc>
+<loc>./cd2021 40823116.html</loc>
 <lastmod>2021-02-26T01:28:34+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://40823116.github.io/cd2021/blog/2020-Fall-Intro-to-computer-programming.html</loc>
+<loc>./2020-Fall-Intro-to-computer-programming.html</loc>
 <lastmod>2021-02-25T16:24:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://40823116.github.io/cd2021/blog/category/misc.html</loc>
+<loc>./category/misc.html</loc>
 <lastmod>2021-02-26T01:28:34+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://40823116.github.io/cd2021/blog/tag/cd2021.html</loc>
+<loc>./tag/cd2021.html</loc>
 <lastmod>2021-02-26T01:28:34+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://40823116.github.io/cd2021/blog/tag/2020fallcp.html</loc>
+<loc>./tag/2020fallcp.html</loc>
 <lastmod>2021-02-25T16:24:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://40823116.github.io/cd2021/blog/author/40823116.html</loc>
+<loc>./author/40823116.html</loc>
 <lastmod>2021-02-26T01:28:34+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://40823116.github.io/cd2021/blog/author/yen.html</loc>
+<loc>./author/yen.html</loc>
 <lastmod>2021-02-25T16:24:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
