@@ -134,6 +134,26 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">W10-W11 << <a href='W10-W11.html'>Previous</a> <br /><h1>task1</h1>
+<p>作業ㄉ程式</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># open file, default is read mode, since txt content no chinese char
+# no encoding = "UTF-8" is needed
+with open("stage3_2a.txt") as fh:
+    # readlines will read into the whole line and put into 16 list format
+    # has \n at the end of each line
+    data = fh.readlines()
+    data = [a.replace('4823122','40823122') for a in data]
+    data = [b.replace('\t\t\t\t',' ') for b in data]
+    print(data)
+for i in range(len(data)):
+    group = data[i].rstrip("\n").split("\t")
+    print('&lt;p&gt;'+group[0]+'|&lt;a href="https://'+group[1]+'.github.io/stage3-ag'+group[0][9]+'"&gt;網站&lt;/a&gt; | &lt;a href="https://github.com/'+group[2]+'/stage3-ag'+group[0][9]+'"&gt;倉儲&lt;/a&gt;&lt;/p&gt;')
+    for j in range(2,17,2):
+        try:
+            print('&lt;p&gt;'+group[j]+'|&lt;a href="https://'+group[j]+'.github.io/cd2021"&gt;網站&lt;/a&gt; | &lt;a href="https://github.com/'+group[2]+'/cd2021"&gt;倉儲&lt;/a&gt; | &lt;a href="https://'+group[j]+'.github.io/stage3-ag'+group[0][9]+'"&gt;小組網站&lt;/a&gt;&lt;/p&gt;')
+        except:
+            continue
+#  the following will use group data to generate needed html</pre>
+<p>完成品</p>
 <p>stage3_ag1|<a href="https://40823131.github.io/stage3-ag1">網站</a> | <a href="https://github.com/40823131/stage3-ag1">倉儲</a></p>
 <p>40823131|<a href="https://40823131.github.io/cd2021">網站</a> | <a href="https://github.com/40823131/cd2021">倉儲</a> | <a href="https://40823131.github.io/stage3-ag1">小組網站</a></p>
 <p>a40823112|<a href="https://a40823112.github.io/cd2021">網站</a> | <a href="https://github.com/40823131/cd2021">倉儲</a> | <a href="https://a40823112.github.io/stage3-ag1">小組網站</a></p>
