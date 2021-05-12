@@ -122,7 +122,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='ABOUT.html'>ABOUT</a><li class='has-children'><a href='stage1.html'>stage1</a><ul class='dropdown'><li><a href='W2.html'>W2</a><li><a href='W3.html'>W3</a><li><a href='W4.html'>W4</a></li></ul><li class='has-children'><a href='stage2.html'>stage2</a><ul class='dropdown'><li><a href='W5-W6.html'>W5-W6</a><li><a href='W7-W8.html'>W7-W8</a></li></ul><li class='has-children'><a href='stage3.html'>stage3</a><ul class='dropdown'><li class='has-children'><a href='W10-W11.html'>W10-W11</a><ul class='dropdown'><li><a href='task1.html'>task1</a></li>
+                     <li><a href='ABOUT.html'>ABOUT</a><li class='has-children'><a href='stage1.html'>stage1</a><ul class='dropdown'><li><a href='W2.html'>W2</a><li><a href='W3.html'>W3</a><li><a href='W4.html'>W4</a></li></ul><li class='has-children'><a href='stage2.html'>stage2</a><ul class='dropdown'><li><a href='W5-W6.html'>W5-W6</a><li><a href='W7-W8.html'>W7-W8</a></li></ul><li class='has-children'><a href='stage3.html'>stage3</a><ul class='dropdown'><li class='has-children'><a href='W10-W11.html'>W10-W11</a><ul class='dropdown'><li><a href='task1.html'>task1</a><li><a href='SSH.html'>SSH</a></li>
                       </ul>
                 </nav>
               </div>
@@ -133,7 +133,7 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">W10-W11 << <a href='W10-W11.html'>Previous</a> <br /><h1>task1</h1>
+    <div id="tipue_search_content">W10-W11 << <a href='W10-W11.html'>Previous</a> <a href='SSH.html'>Next</a> >> SSH<br /><h1>task1</h1>
 <p>作業ㄉ程式</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># open file, default is read mode, since txt content no chinese char
 # no encoding = "UTF-8" is needed
@@ -206,30 +206,7 @@ for i in range(len(data)):
 <p>40823129|<a href="https://40823129.github.io/cd2021">網站</a> | <a href="https://github.com/40823152/cd2021">倉儲</a> | <a href="https://40823129.github.io/stage3-ag6">小組網站</a></p>
 <p>40823149|<a href="https://40823149.github.io/cd2021">網站</a> | <a href="https://github.com/40823152/cd2021">倉儲</a> | <a href="https://40823149.github.io/stage3-ag6">小組網站</a></p>
 <p>40823153|<a href="https://40823153.github.io/cd2021">網站</a> | <a href="https://github.com/40823152/cd2021">倉儲</a> | <a href="https://40823153.github.io/stage3-ag6">小組網站</a></p>
-<p>SSH</p>
-<p><span>利用隨身系統輸入指令sh</span></p>
-<p>輸入指令ssh-keygen -t rsa -b 4096 -C "學號"</p>
-<p>預設的鑰匙儲存在y:\home\.ssh目錄裡</p>
-<p><span><img alt="" height="291" src="./../images/cmd_3TSfGz9hLc.png" width="557"/></span></p>
-<p>使用puttygen將private key(id_rsa)導入，save private key轉換為putty能夠讀懂的格式(.ppk)檔案</p>
-<p>存好(.ppk)檔後</p>
-<p><img alt="" height="444" src="./../images/puttygen_WME0zuQGUj.png" width="556"/></p>
-<p><span>使用scite將public key (id_rsa.pub)打開，到工具列找到Options&gt;Wrap就能看到</span><span>完整檔案內容</span></p>
-<p><span><img alt="" height="633" src="./../images/SciTE_h5MayYSUO5.png" width="554"/></span></p>
-<p><span>將完整public key內容複製，進入github點擊settings，後點選SSH and GPG keys</span></p>
-<p><span><img alt="" height="426" src="./../images/chrome_l2SmlIuFpO.png" width="211"/></span></p>
-<p><span>點擊New SSH key，將複製的鑰匙貼上並儲存就可以使用了</span></p>
-<p><span><img alt="" height="35" src="./../images/chrome_Z5Rzs3Nghe.png" width="561"/></span></p>
-<p>SSH PuTTY的設定</p>
-<p><span>選擇前面步驟所生成之.ppk檔案</span></p>
-<p><img alt="" height="559" src="./../images/putty_JAY0Cs4cZ2.png" width="560"/></p>
-<p><span>回到Session點選</span><span>save存檔，如果這台電腦只有自己使用的話，儲存後無特殊情況不需要重新設定此步驟</span></p>
-<p><span><img alt="" height="558" src="./../images/putty_rlRTaBEXui.png" width="559"/></span></p>
-<p>最後一步需要進入你要push的資料夾</p>
-<p>進入Y:\tmp\你要push的資料夾\.git內修改config檔案</p>
-<p>從[remote "origin"]下的url = https://github.com/40823116/cd2021.git改為</p>
-<p>                                 url = git@github.com:40823116/cd2021.git</p>
-<p><img alt="" height="694" src="./../images/SciTE_CQowaoSVBs.png" width="559"/></p><br />W10-W11 << <a href='W10-W11.html'>Previous</a> </div>
+<br />W10-W11 << <a href='W10-W11.html'>Previous</a> <a href='SSH.html'>Next</a> >> SSH</div>
         
     <!-- footer -->
       <div class="container">

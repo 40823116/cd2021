@@ -133,8 +133,30 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">stage3 << <a href='stage3.html'>Previous</a> <a href='task1.html'>Next</a> >> task1<br /><h1>W10-W11</h1>
-<br />stage3 << <a href='stage3.html'>Previous</a> <a href='task1.html'>Next</a> >> task1</div>
+    <div id="tipue_search_content">task1 << <a href='task1.html'>Previous</a> <br /><h1>SSH</h1>
+<p><span>利用隨身系統輸入指令sh</span></p>
+<p>輸入指令ssh-keygen -t rsa -b 4096 -C "學號"</p>
+<p>預設的鑰匙儲存在y:\home\.ssh目錄裡</p>
+<p><span><img alt="" height="291" src="./../images/cmd_3TSfGz9hLc.png" width="557"/></span></p>
+<p>使用puttygen將private key(id_rsa)導入，save private key轉換為putty能夠讀懂的格式(.ppk)檔案</p>
+<p>存好(.ppk)檔後</p>
+<p><img alt="" height="444" src="./../images/puttygen_WME0zuQGUj.png" width="556"/></p>
+<p><span>使用scite將public key (id_rsa.pub)打開，到工具列找到Options&gt;Wrap就能看到</span><span>完整檔案內容</span></p>
+<p><span><img alt="" height="633" src="./../images/SciTE_h5MayYSUO5.png" width="554"/></span></p>
+<p><span>將完整public key內容複製，進入github點擊settings，後點選SSH and GPG keys</span></p>
+<p><span><img alt="" height="426" src="./../images/chrome_l2SmlIuFpO.png" width="211"/></span></p>
+<p><span>點擊New SSH key，將複製的鑰匙貼上並儲存就可以使用了</span></p>
+<p><span><img alt="" height="35" src="./../images/chrome_Z5Rzs3Nghe.png" width="561"/></span></p>
+<p>SSH PuTTY的設定</p>
+<p><span>選擇前面步驟所生成之.ppk檔案</span></p>
+<p><img alt="" height="559" src="./../images/putty_JAY0Cs4cZ2.png" width="560"/></p>
+<p><span>回到Session點選</span><span>save存檔，如果這台電腦只有自己使用的話，儲存後無特殊情況不需要重新設定此步驟</span></p>
+<p><span><img alt="" height="558" src="./../images/putty_rlRTaBEXui.png" width="559"/></span></p>
+<p>最後一步需要進入你要push的資料夾</p>
+<p>進入Y:\tmp\你要push的資料夾\.git內修改config檔案</p>
+<p>從[remote "origin"]下的url = https://github.com/40823116/cd2021.git改為</p>
+<p>                                 url = git@github.com:40823116/cd2021.git</p>
+<p><img alt="" height="694" src="./../images/SciTE_CQowaoSVBs.png" width="559"/></p><br />task1 << <a href='task1.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
