@@ -145,7 +145,14 @@ img.add_border {
 <p>場景檔及程式檔</p>
 <p><a href="https://drive.google.com/drive/folders/14ut-FXKNzECQYaNaNzz4EKZShpUYr_a2?usp=sharing">第二部分</a></p>
 <p>操作影片</p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/Gw9hdxyrvOk" title="YouTube video player" width="560"></iframe>內容的筆記是由組長40823131江建儒的影片做的筆記</p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/Gw9hdxyrvOk" title="YouTube video player" width="560"></iframe>內容的筆記是由組長40823131江建儒的影片做的筆記:</p>
+<p>先定義一個叫move的function，裡面包含j1,j2,j3,j4</p>
+<p>jointHandle是空的列表</p>
+<p>j是分別用來計算j1,j2,j3,j4並轉化為徑度</p>
+<p>第一個for迴圈，從1跑到4，每次加1，總共會跑1,2,3,4，它們分別代表帶入之後會得到MTB_axis1到MTB_axis4，結果將會放入jointHandle的空的列表裡面，達到後續可以從裡面存取的目的</p>
+<p>第二個for迴圈，他一樣也是從1跑到4，下面這一行的意思表示，這個轉軸轉的徑度，i就會帶入1到4，j[i]也是一樣，從j列表中，分別取出第1,2,3,4</p>
+<p>function sysCall_threadmain為主程式</p>
+<p>呼叫move出來，後面給出你想要的角度給他</p>
 <p>3. 手臂末端加入 components-gripper-suction pad 吸盤</p>
 <p><span>場景檔及程式檔</span></p>
 <p><a href="https://drive.google.com/drive/folders/13Ea1GKyRNVB4VG_ywsWHlJR-0r-jQL-y?usp=sharing">第三部分</a></p>
@@ -156,14 +163,33 @@ img.add_border {
 <p><span><a href="https://drive.google.com/drive/folders/1kpdj_Uht6G844tm_0D02KujNu6soRhDl?usp=sharing">第四部份(迴圈)</a></span></p>
 <p><span>操作影片(迴圈)</span></p>
 <p><span><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/HlzVzs2nQnI" title="YouTube video player" width="560"></iframe></span></p>
+<p>內容的筆記是由組長40823131江建儒的影片做的筆記:</p>
+<p>與第二部分相似，多了吸盤的部分</p>
+<p>enable表示吸盤判斷的一個值</p>
+<p>下面增加了if else</p>
+<p>if enable 這個值，</p>
+<p>如果被輸入ture，就會發出信號，就會讓activity這個代號，傳回1那裏，就是吸盤會吸取的動作</p>
+<p>如果是fales的話，就是執行else的部分，吸盤就會放掉<br/>這邊也是一樣，主程式呼叫後，在第五個地方，指定這個階段吸盤是要吸還是放</p>
+<p>利用ik算出來有4個角度，第一個部分43.79,-66.2053，第二個部分-158.2529,-87.7894</p>
+<p></p>
 <p><span>場景檔和程式檔雲端資料夾(鍵盤):</span></p>
 <p><a href="https://drive.google.com/drive/folders/14NL1NuGrShj-VjUfJrIQD8RoicmQI8X8?usp=sharing">第四部份(鍵盤)</a></p>
 <p><span>操作影片(鍵盤)</span></p>
-<p><span><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/VXMYyOgHDok" title="YouTube video player" width="560"></iframe></span></p>
+<p><span><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/VXMYyOgHDok" title="YouTube video player" width="560"></iframe>內容的筆記是由組長40823131江建儒的影片做的筆記:</span></p>
+<p>說明每個按鍵會做的事</p>
+<p>按下L，我們有設置2個角度，分別是0.2跟0.7位置的角度，下面兩行在按下L時會執行這兩行，控制這兩根軸(axis1，axis2)分別轉deg1和deg2</p>
+<p>R以此類推，R是-0.3和-0.55</p>
+<p>下面也是以此類推，下面就是個轉各自的角度</p>
+<p>D跟U就是上下移動，link3和吸盤會上下移動<br/>，要移動到對的地方才會做動</p>
+<p>B是回歸原點，2個角度都設0</p>
 <p><span>5.Python remote API逆向運算學函式<br/><span>場景檔和程式檔雲端資料夾:</span></span></p>
 <p><span><span><a href="https://drive.google.com/drive/folders/1_WpweZ9hLxWR9RpNwzw5AxjcscEK1LwY?usp=sharing">第五部分</a></span></span></p>
 <p><span><span>操作影片</span></span></p>
-<p><span><span><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/tS-YsWaN0Eo" title="YouTube video player" width="560"></iframe></span></span></p><br />W15 << <a href='W15.html'>Previous</a> </div>
+<p><span><span><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/tS-YsWaN0Eo" title="YouTube video player" width="560"></iframe>內容的筆記是由組長40823131江建儒的影片做的筆記:</span></span></p>
+<p>定義函式move，裡面有3個變數，因為要控制三個軸，我們先定義每個軸控制的部分<br/>jointhandle給三個元素<br/>j一樣可以用for迴圈提取裡面的計算的值<br/>下面for迴圈range3，0 1 2三個，因為range是python語法，和lua不同所以要改寫，<br/>simxSetJointPosition也要改寫成python remote api的格式<br/>jointhandle i，他會先取第1項0，接續取第二項1第三項2</p>
+<p>然後再定義一個吸和吐的函式<br/>我們指定吸的這個給他的吸盤一個1的信號，讓他執行1的動作<br/>吐就是給他0的信號，讓他不吸了</p>
+<p>心得:</p>
+<p>這一次的分組討論，我很開心能夠參與，程式的部分我本來就比較不熟悉，但是藉由組長拍設影片的方式，讓我整理了筆記，能夠理解內容，並且和組員們分工完成這一次的考題。</p><br />W15 << <a href='W15.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
