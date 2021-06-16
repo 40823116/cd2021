@@ -1,2 +1,2 @@
 # cmstemplate
-https://40823116.github.io/cd2021/.
+https://cd2021-40823116.herokuapp.com/content/index.html
